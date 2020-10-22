@@ -2,6 +2,7 @@ import {Node} from "./Node.ts";
 import {Grafo} from "./Grafo.ts";
 import {buscaLargura} from "./buscaLargura.ts"
 import {buscaProfundidade} from "./buscaProfundidade.ts"
+import {buscaProfundidadeLimitada} from "./buscaProfundidadeLimitada.ts"
 
 const grafo = new Grafo();
 
@@ -26,3 +27,6 @@ buscaLargura(grafo, "A", "D");
 
 console.log("\nBusca em Profundidade: ");
 buscaProfundidade(grafo, "A", "D");
+
+console.log("\nBusca em ProfundidadeLimitada: ");
+buscaProfundidadeLimitada(grafo, "A", "D");
