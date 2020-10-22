@@ -1,7 +1,7 @@
 import {Node} from "./Node.ts";
 import {Grafo} from "./Grafo.ts";
 
-export function buscaLargura(grafo: Grafo, node_inicio: string|Node, node_fim: string|Node) : string[]{
+export function buscaCustoUniforme(grafo: Grafo, node_inicio: string|Node, node_fim: string|Node) : string[]{
     
     const inicio = grafo.nodes[grafo.indexOf(node_inicio)];
     const fim = grafo.nodes[grafo.indexOf(node_fim)];
@@ -28,8 +28,8 @@ export function buscaLargura(grafo: Grafo, node_inicio: string|Node, node_fim: s
 
     while(fila.length > 0){
         const node = fila.shift() as Node;
-        for (let index = 0; index < node.adjacentes.length; index++) {
-            const vertice = node.adjacentes[index];
+        for (let index = 0; index < node.custos.length; index++) {
+            const vertice = node.custos[index].node;
             if(!vertice.visitado){
                 if(vertice.rotulo === node_fim){
                     // console.log(vertice.rotulo);

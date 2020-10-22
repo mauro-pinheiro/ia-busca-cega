@@ -1,5 +1,7 @@
 import { Node } from "./Node.ts";
 
+
+
 /**
  * Representa um grafo
  */
@@ -44,10 +46,10 @@ export class Grafo {
         }
     }
 
-    public addAresta(node1: string|Node, node2: string|Node): Grafo {
+    public addAresta(node1: string|Node, node2: string|Node, custo: number = 0): Grafo {
         const index1 = this.indexOf(node1);
         const index2 = this.indexOf(node2);
-        this._nodes[index1].addAdjacente(this._nodes[index2]);
+        this._nodes[index1].addAdjacente(this._nodes[index2], custo);
         return this;
     }
 }
