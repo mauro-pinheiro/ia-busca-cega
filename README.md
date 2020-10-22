@@ -13,5 +13,5 @@ Implementar os tipos de Buscas Cegas.
   - ~~Bidirecional~~ (Fatando)
   
 ### Ferramentas Utilizadas
-  - (deno)[https://deno.land/]
-  - (typescript)[https://www.typescriptlang.org/]
+  - [deno](https://deno.land/)
+  - [typescript](https://www.typescriptlang.org/)
