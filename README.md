@@ -10,7 +10,7 @@ Implementar os tipos de Buscas Cegas.
   - Em profundidade
   - Em profundidade limitada
   - Aprofundamento interativo
-  - ~~Bidirecional~~ (Fatando)
+  - ~~Bidirecional~~ (Faltando)
   
 ### Ferramentas Utilizadas
   - [deno](https://deno.land/)
